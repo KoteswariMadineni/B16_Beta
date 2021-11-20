@@ -1,22 +1,23 @@
+ <style>
+     
+ </style>
  <div class="heading">
  <h2>Book Details</h2>
 </div> 
 <div class="left">
     <img src="assets/image/Angular1.jpg" alt="Book Image">
-    <div class="right">
-    <ul>
-    <li *ngFor="let book of bookDetails">
-        <p>Title:{{book.title}}</p>
-        <p>Author:{{book.author}}</p>
-        <p>Category:{{book.category}}</p>
-        <p>price:₹{{book.price}}</p>
-    </li>
-</ul>
 </div>
+    <div class="right">
+    <table>
+    <tr *ngFor="let book of bookDetails">
+        <td>Title:{{book.title}}</td>
+        <td>Author:{{book.author}}</td>
+        <td>Category:{{book.category}}</td>
+        <td>price:₹{{book.price}}</td>
+    </tr>
+    </table>
 </div>
 <div class="cart">
 <button>Add to cart</button>
-</div>
-<div class="whislist">
 <button>Add to Whislist</button>
 </div>
