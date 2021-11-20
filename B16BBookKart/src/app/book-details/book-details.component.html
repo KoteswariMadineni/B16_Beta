@@ -1,6 +1,8 @@
-<h2>Book Details</h2>
+ <div class="heading">
+ <h2>Book Details</h2>
+</div> 
 <div class="left">
-    <img src="assets/img/Angular1.jpg">
+    <img [src]="{{book.bookImage}}" alt="Book Image">
     <div class="right">
     <ul>
     <li *ngFor="let book of bookDetails">

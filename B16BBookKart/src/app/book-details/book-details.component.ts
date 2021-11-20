@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookDetailsComponent implements OnInit {
   bookDetails:any=[{
+  bookImage:"assets/image/Angular1.jpg",
   title: "Expert Angular",
   author:"Mathie Nayrolles, Rajesh Gunasundaram",
   category:"Education",
