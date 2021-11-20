@@ -1,6 +1,20 @@
 <h2>Book Details</h2>
 <div class="left">
-    <img src="{{}}"
+    <img src="Angular1.jpg">
+    <div class="right">
+    <ul>
+    <li *ngFor="let book of bookDetails">
+        <p>Title:{{book.title}}</p>
+        <p>Author:{{book.author}}</p>
+        <p>Category:{{book.category}}</p>
+        <p>price:₹{{book.price}}/</p>
+    </li>
+</ul>
 </div>
+</div>
+<div class="cart">
 <button>Add to cart</button>
+</div>
+<div class="whislist">
 <button>Add to Whislist</button>
+</div>
