@@ -6,13 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./book-details.component.scss']
 })
 export class BookDetailsComponent implements OnInit {
-  bookDetails:any=[{
-  title: "Expert Angular",
-  author:"Mathie Nayrolles, Rajesh Gunasundaram",
-  category:"Education",
-  price:"3300.00",
-  },
-  ]
+
+  title:string= "Expert Angular";
+  author:string="Mathie Nayrolles, Rajesh Gunasundaram";
+  category:string="Education";
+  price:string="3300.00";
+  
+
   constructor() { }
 
   ngOnInit(): void {
