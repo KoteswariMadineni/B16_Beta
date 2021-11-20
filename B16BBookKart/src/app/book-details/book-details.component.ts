@@ -12,24 +12,7 @@ export class BookDetailsComponent implements OnInit {
   category:"Education",
   price:"3300.00",
   },
-  {
-    title: "",
-  author:"",
-  category:"",
-  price:"",
-  },
-  {
-  title: "",
-  author:"",
-  category:"",
-  price:"",
-  },
-  {
-    title:"",
-  author:"",
-  category:"",
-  price:"",
-  }]
+  ]
   constructor() { }
 
   ngOnInit(): void {
