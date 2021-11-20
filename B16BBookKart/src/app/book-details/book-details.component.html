@@ -2,14 +2,14 @@
  <h2>Book Details</h2>
 </div> 
 <div class="left">
-    <img [src]="{{book.bookImage}}" alt="Book Image">
+    <img src="{{bookImage}}" alt="Book Image">
     <div class="right">
     <ul>
     <li *ngFor="let book of bookDetails">
         <p>Title:{{book.title}}</p>
         <p>Author:{{book.author}}</p>
         <p>Category:{{book.category}}</p>
-        <p>price:₹{{book.price}}/</p>
+        <p>price:₹{{book.price}}</p>
     </li>
 </ul>
 </div>
