@@ -2,14 +2,15 @@
   background-color: palevioletred;
   text-align: left;
   border: 4px;
+  left: 30%;
 }
 .box{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 25%;
+    left: 24%;
     transform: translate(-50%,-50%);
     width: 600px;
-    padding: 20px;
+    padding: 2px;
     background: #fff;
     border-radius: 4px;
     box-sizing: border-box;
@@ -22,4 +23,13 @@
 .box .left img{
     max-width: 100%;
 }
+.box .right{
+    width: 150px;
+    flex: 0 0 150px;
+    border-collapse: collapse;
+}
 
+.box .right .cart{
+    padding: auto;
+    display: inline;
+}
