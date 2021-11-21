@@ -36,14 +36,16 @@
 }
 
 .box  .cart{
-    padding: 4px;
+    padding: 10px 20px;
+    font-size: 30px;
     display: inline-block;
+    border: 0;
+    size: 30px;
 }
-#b1
-{
-   background-position: -4px 0;
+#b1{
+    background-color: blue;
 }
-#b2
-{
-   background-position: -59px 0;
+#b2{
+    margin: 20px;
+    background-color: red;
 }
