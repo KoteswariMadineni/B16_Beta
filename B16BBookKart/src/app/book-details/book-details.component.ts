@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./book-details.component.scss']
 })
 export class BookDetailsComponent implements OnInit {
-
   title:string= "Expert Angular";
   author:string="Mathie Nayrolles, Rajesh Gunasundaram";
   category:string="Education";
