@@ -1,0 +1,28 @@
+<div class="box">
+    <div class="title">
+    <h2>Book Details</h2>
+  </div>
+<div class="image-card">
+    <div class="image">
+        <img src="assets/image/HP" alt="Book Image">
+    </div>
+  <table class="table" *ngFor="let book of bookDetails">
+        <tr>
+            <th>Title</th>
+            <td>{{book.title}}</td>
+        </tr>
+        <tr>
+            <th>Author</th>
+            <td>{{book.author}}</td>
+        </tr>
+        <tr>
+            <th>Category</th>
+            <td>{{book.category}}</td>
+        </tr>
+        <tr>
+        <th>Price</th>
+        <td>{{book.price | currency:"INR"}}</td>
+        </tr>
+    </table>
+</div>
+</div>
