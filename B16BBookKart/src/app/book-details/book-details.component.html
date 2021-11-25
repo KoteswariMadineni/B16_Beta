@@ -1,10 +1,10 @@
-<div class="box">
+
     <div class="title">
     <h2>Book Details</h2>
   </div>
 <div class="image-card">
     <div class="image">
-        <img src="assets/image/HP" alt="Book Image">
+        <img src="assets/images/HP.jpg" alt="Book Image">
     </div>
   <table class="table" *ngFor="let book of bookDetails">
         <tr>
@@ -24,5 +24,12 @@
         <td>{{book.price | currency:"INR"}}</td>
         </tr>
     </table>
-</div>
-</div>
+    </div>
+    
+    <button id="b1" ><mat-icon>shopping_cart</mat-icon>Add to Cart</button>
+    <button id="b2" ><mat-icon>favorite</mat-icon>Add to Whishlist</button>
+   
+    
+    
+
+
