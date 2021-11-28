@@ -1,12 +1,14 @@
 
     <div class="title">
-    <h2>Book Details</h2>
+    <h2 style="font-size: 30px;">Book Details</h2>
   </div>
-<div class="image-card">
+<div class="outer">
     <div class="image">
         <img src="assets/images/HP.jpg" alt="Book Image">
     </div>
-  <table class="table" *ngFor="let book of bookDetails">
+    <div class="row">
+        
+  <table  *ngFor="let book of bookDetails">
         <tr>
             <th>Title</th>
             <td>{{book.title}}</td>
@@ -25,9 +27,13 @@
         </tr>
     </table>
     </div>
-    
-    <button id="b1" ><mat-icon>shopping_cart</mat-icon>Add to Cart</button>
-    <button id="b2" ><mat-icon>favorite</mat-icon>Add to Whishlist</button>
+    <div class="cart">
+    <button id="b1"><mat-icon>shopping_cart</mat-icon>Add to Cart</button>
+    <button id="b2"><mat-icon>favorite</mat-icon>Add to Whishlist</button>
+</div>
+</div>
+</div>
+
    
     
     
