@@ -1,0 +1,10 @@
+{
+    "book":[{
+        "bookId":1,
+        "title":"HP1",
+        "author":"J.K.R",
+        "category":"Mystery",
+        "price":"230.00"
+    }
+]
+}

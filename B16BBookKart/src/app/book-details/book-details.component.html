@@ -6,33 +6,32 @@
     <div class="image">
         <img src="assets/images/HP.jpg" alt="Book Image">
     </div>
-    <div class="row">
-        
-  <table  *ngFor="let book of bookDetails">
-        <tr>
+    <div class="row" >
+  <table  >
+        <tr >
             <th>Title</th>
-            <td>{{book.title}}</td>
+            <td>{{bookDetails.title}}</td>
         </tr>
         <tr>
             <th>Author</th>
-            <td>{{book.author}}</td>
+            <td>{{bookDetails.author}}</td>
         </tr>
         <tr>
             <th>Category</th>
-            <td>{{book.category}}</td>
+            <td>{{bookDetails.category}}</td>
         </tr>
         <tr>
         <th>Price</th>
-        <td>{{book.price | currency:"INR"}}</td>
+        <td>{{bookDetails.price | currency:"INR"}}</td>
         </tr>
     </table>
-    </div>
     <div class="cart">
     <button id="b1"><mat-icon>shopping_cart</mat-icon>Add to Cart</button>
     <button id="b2"><mat-icon>favorite</mat-icon>Add to Whishlist</button>
 </div>
 </div>
 </div>
+
 
    
     

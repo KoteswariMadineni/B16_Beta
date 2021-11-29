@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BookDetailsService } from './book-details.service';
+//import { IBookDetails } from './services/book-details';
 
 @Component({
   selector: 'app-book-details',
@@ -6,18 +8,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./book-details.component.scss']
 })
 export class BookDetailsComponent implements OnInit {
-  bookDetails=[
-    {
-      title:"HP",
-      author:"J.K.Rowling",
-      category:"Mystery",
-      price:"310.00"
-    }
-  ];
+    public bookDetails:any;
+   //public errMsg: any;
 
-  constructor() { }
+  constructor(private detailsService: BookDetailsService) { }
 
   ngOnInit(): void {
+    
+  /*this.detailsService.getBookDetails().subscribe
+     (
+       data=>this.bookDetails=data
+      //error=> this.errMsg= error
+ ) ;*/
+ 
+    
+  this.detailsService.getBookDetailsByParameter().subscribe(data=>{this.bookDetails=data;});
   }
 
 }
