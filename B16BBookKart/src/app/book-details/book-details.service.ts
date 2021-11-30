@@ -21,7 +21,7 @@ export class BookDetailsService {
   
   getBookDetailsByParameter(): Observable<IBookDetails[]>{
     let param=new HttpParams().set('bookId','21');
-    return this.http.get<IBookDetails[]>("https://bookcart.azurewebsites.net/api/book/21",{params:param})
+    return this.http.get<IBookDetails[]>("https://bookcart.azurewebsites.net/api/book/21",{params:param});
 
-  }
+   }
 }

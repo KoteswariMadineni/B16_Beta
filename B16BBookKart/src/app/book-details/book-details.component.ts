@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Observable } from 'rxjs';
 import { BookDetailsService } from './book-details.service';
 
 
@@ -9,13 +11,14 @@ import { BookDetailsService } from './book-details.service';
 })
 export class BookDetailsComponent implements OnInit {
     public bookDetails:any;
-   
-
-  constructor(private detailsService: BookDetailsService) { }
-
+    
+  
+  constructor(private detailsService: BookDetailsService,private router:ActivatedRoute) { }
+ 
   ngOnInit(): void {
     
   this.detailsService.getBookDetailsByParameter().subscribe(data=>{this.bookDetails=data;});
-  }
 
+  }
+ 
 }
